@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang = "en">
+   <head></head>
+   <body>
+
+      <h1>Top starred GitHub repositories</h1>
+
+      <table>
+         <thead>
+            <tr>
+               <th>Name</th>
+               <th>Stars</th>
+               <th>URL</th>
+               <th>Description</th>
+            </tr>
+         </thead>
+         <tbody>
+            {% for repo in repos %}
+               <tr>
+                  <td><a href="/{{repo.repo_id}}">{{ repo.name }}</a></td>
+                  <td>{{ repo.stars }}</td>
+                  <td>{{ repo.url }}</td>
+                  <td>{{ repo.description }}</td>
+               </tr>
+            {% endfor %}
+         </tbody>
+      </table>
+
+
+   </body>
+</html>

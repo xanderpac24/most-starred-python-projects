@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang = "en">
+   <head></head>
+   <body>
+      <h1>Details</h1>
+
+      <table>
+            <tr>
+              <th>ID</th>
+              <td>{{ repo.repo_id }}</td>
+            </tr>
+           <tr>
+            <th>Name</th>
+            <td>{{ repo.name }}</td>
+           </tr>
+           <tr>
+            <th>Stars</th>
+            <td>{{ repo.stars }}</td>
+           </tr>
+           <tr>
+            <th>URL</th>
+            <td>{{ repo.url }}</td>
+           </tr>
+           <tr>
+            <th>Description</th>
+            <td>{{ repo.description }}</td>
+           </tr>
+           <tr>
+             <th>Creation date</th>
+             <td>{{ repo.created_date }}</td>
+            </tr>
+            <tr>
+             <th>Last push</th>
+             <td>{{ repo.last_push_date }}</td>
+            </tr>
+         </tbody>
+      </table>
+   </body>
+</html>
